@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Fayrouze Boutayeb</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+<!-- ================= Navbar ================= -->
+<nav class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow z-50">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+    <span class="font-bold text-blue-600">Fayrouze</span>
+    <div class="flex items-center gap-4 text-sm font-semibold">
+      <a href="#presentation" class="hover:text-blue-600">Présentation</a>
+      <a href="#competences" class="hover:text-blue-600">Compétences</a>
+      <a href="#projets" class="hover:text-blue-600">Projets</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+      <button id="darkToggle" class="text-xl">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-6xl mx-auto p-6 pt-28">
+
+<!-- ================= Header ================= -->
+<header class="text-center mb-16">
+  <img src="imgs/gg.jpeg"
+       class="mx-auto w-40 h-40 rounded-full object-cover shadow-lg mb-4">
+  <h1 class="text-4xl font-bold text-blue-600">Fayrouze Boutayeb</h1>
+  <p class="text-lg font-semibold mt-2">
+    Technicienne spécialisée en développement digital
+  </p>
+</header>
+
+<!-- ================= Presentation ================= -->
+<section id="presentation" class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow mb-10">
+  <h2 class="text-2xl font-bold text-blue-600 mb-4">Présentation</h2>
+  <p>
+    Technicienne spécialisée en développement digital, je m’intéresse au développement web
+    et je cherche à renforcer mes compétences professionnelles au sein d’un environnement structuré.
+  </p>
+</section>
+
+<!-- ================= Skills ================= -->
+<section id="competences" class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow mb-10">
+  <h2 class="text-2xl font-bold text-blue-600 mb-6">Compétences</h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <span class="skill">Outils bureautiques</span>
+    <span class="skill">Discipline</span>
+    <span class="skill">Capacité d’adaptation</span>
+    <span class="skill">Esprit d’équipe</span>
+    <span class="skill">Sérieuse</span>
+  </div>
+</section>
+
+<!-- ================= Projects ================= -->
+<section id="projets" class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow mb-10">
+  <h2 class="text-2xl font-bold text-blue-600 mb-8">Projets</h2>
+
+  <!-- ===== Project 1 ===== -->
+  <div class="relative bg-gray-50 dark:bg-gray-700 rounded-xl shadow-lg p-4 mb-10">
+
+    <h3 class="text-xl font-bold mb-2">Application E-Commerce</h3>
+    <p class="text-sm mb-4">
+      Boutique en ligne simple développée avec Laravel, Breeze et AdminLTE.
+    </p>
+
+    <!-- Arrows -->
+    <button onclick="scrollLeft('gallery1')"
+      class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-gray-800 p-2 rounded-full shadow">◀</button>
+
+    <button onclick="scrollRight('gallery1')"
+      class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-gray-800 p-2 rounded-full shadow">▶</button>
+
+    <!-- Gallery -->
+    <div id="gallery1"
+      class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4">
+      <img src="imgs/P6.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">
+      <img src="imgs/p1.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">
+      <img src="imgs/P2.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">
+      <img src="imgs/P3.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">
+      <img src="imgs/P4.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">
+      <img src="imgs/P5.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">     
+      <img src="imgs/P7.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">
+      <img src="imgs/P8.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">     
+      <img src="imgs/P9.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">     
+      <img src="imgs/P10.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">
+      <img src="imgs/P11.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">     
+      <img src="imgs/P12.png"
+           class="gallery-img snap-center min-w-[350px] rounded-lg shadow cursor-pointer">
+    </div>
+
+    <a href="http://127.0.0.1:8000/user/dashboard" class="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+      Voir le projet
+    </a>
+  </div>
+</section>
+
+<!-- ================= Contact ================= -->
+<section id="contact" class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow text-center">
+  <h2 class="text-2xl font-bold text-blue-600 mb-4">Contact</h2>
+  <p>
+    <strong>Email :</strong>
+    <a href="mailto:fayrouzeboutayeb90@gmail.com" class="text-blue-600 underline">
+      fayrouzeboutayeb90@gmail.com
+    </a>
+  </p>
+</section>
+
+</div>
+
+<!-- ================= Modal ================= -->
+<div id="imageModal"
+  class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+  <img id="modalImg" class="max-w-[90%] max-h-[90%] rounded-xl shadow-lg">
+</div>
+
+<!-- ================= Scripts ================= -->
+<script>
+  // Dark mode
+  const toggle = document.getElementById('darkToggle');
+  const html = document.documentElement;
+  if (localStorage.getItem('theme') === 'dark') {
+    html.classList.add('dark');
+    toggle.textContent = '☀️';
+  }
+  toggle.onclick = () => {
+    html.classList.toggle('dark');
+    const isDark = html.classList.contains('dark');
+    toggle.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  };
+
+  // Scroll buttons
+  function scrollLeft(id) {
+    document.getElementById(id).scrollBy({ left: -400, behavior: 'smooth' });
+  }
+  function scrollRight(id) {
+    document.getElementById(id).scrollBy({ left: 400, behavior: 'smooth' });
+  }
+
+  // Auto carousel
+  function autoScroll(id) {
+    const g = document.getElementById(id);
+    setInterval(() => {
+      g.scrollBy({ left: 400, behavior: 'smooth' });
+      if (g.scrollLeft + g.clientWidth >= g.scrollWidth) {
+        g.scrollTo({ left: 0, behavior: 'smooth' });
+      }
+    }, 4000);
+  }
+  autoScroll('gallery1');
+  autoScroll('gallery2');
+
+  // Image zoom
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImg');
+  document.querySelectorAll('.gallery-img').forEach(img => {
+    img.onclick = () => {
+      modalImg.src = img.src;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    };
+  });
+  modal.onclick = () => {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  };
+</script>
+
+<style>
+  .skill {
+    @apply bg-blue-50 dark:bg-gray-700 text-blue-700 dark:text-gray-100
+    p-3 rounded-lg text-center font-semibold shadow;
+  }
+</style>
+
+</body>
+</html>
